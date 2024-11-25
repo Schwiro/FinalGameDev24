@@ -20,7 +20,7 @@ respawn_timer = undefined;
 
 player_score = 0;
 
-
+//yippee
 
 function scatter_stars(num_stars, min_size, max_size, radius) {
     for (var i = 0; i < num_stars; i++) {
