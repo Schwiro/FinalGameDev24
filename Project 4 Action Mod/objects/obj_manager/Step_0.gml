@@ -9,7 +9,9 @@ if room = rm_game {
 	
 
 	
-	audio_play_sound(bgm_space,1,false)
+				audio_play_sound(bgm_space,1,false)
+	
+	
 	//var random_x = irandom(room_width);
 	//var random_y = irandom(room_height);
 

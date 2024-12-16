@@ -12,6 +12,9 @@ respawn_timer = undefined;
 image_alpha = 1
 alpha_fade_speed = 0.1
 
+heat = 0
+heatmax = 60
+burn = false
 //orbit_radius = random_range(100,450)
 //angle = random_range(0,360)
 

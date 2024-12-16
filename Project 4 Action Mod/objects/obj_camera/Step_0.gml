@@ -66,12 +66,7 @@ if (rotation_speed == 0) {
     rotation_speed = 0.03;
 }
 
-
-//if title_active {
-	angle = lerp(angle, angle + rotation_speed,0.1);
-//}
-
-
+angle = lerp(angle, angle + rotation_speed,0.1);
 
 if (keyboard_check_pressed(vk_space) && title_active) {
     title_active = false; 
@@ -91,5 +86,6 @@ var star_y = obj_star.y;
 x = star_x + radius * cos(angle); 
 y = star_y + radius * sin(angle); 
 camera_angle = 90 + (angle * (180/pi));
+
 camera_set_view_pos(view_camera[0], x, y);
 camera_set_view_angle(view_camera[0], camera_angle);

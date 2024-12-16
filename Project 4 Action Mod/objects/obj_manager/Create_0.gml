@@ -25,7 +25,7 @@
 //}
 
 
-
+// window_set_size(960,540)
 
 function RandomSpawn(maxSpawnNum, gameObj, layerString) {
 	for (var i = 0; i < maxSpawnNum; i ++) {
@@ -51,4 +51,4 @@ function RandomSpawn(maxSpawnNum, gameObj, layerString) {
 			}
 		}
 	}
-}
+}	

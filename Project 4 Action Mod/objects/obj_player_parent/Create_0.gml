@@ -14,13 +14,28 @@ jump_power = 200
 
 left_key = ord("A");
 right_key = ord("D");
+up_key = ord("W");
+down_key = ord("S");
 
 respawn_time = 60;
 respawn_timer = undefined;
 
 player_score = 0;
 
-//yippee
+fuel = 30; 
+max_fuel = 30; 
+fuel_depletion_rate = 1; 
+fuel_regen_rate = 0.5; 
+is_flying = false;
+fly_amount = 5; 
+
+// Dash variables
+dash_window = 30
+dash_timer = 0
+is_dashing = false;
+dash_amount = 120; 
+
+
 
 function scatter_stars(num_stars, min_size, max_size, radius) {
     for (var i = 0; i < num_stars; i++) {

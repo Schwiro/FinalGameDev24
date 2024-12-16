@@ -3,6 +3,10 @@
 var star_x = obj_star.x;
 var star_y = obj_star.y;
 
+if place_meeting(x,y,obj_lava_shoot) {
+	stepped_on = true
+}
+
 if stepped_on {
     a_grav += 0.00005; 
 	scatter_flames(2,0.5,1,5)
@@ -31,11 +35,28 @@ if stepped_on {
 		stepped_on = false
 		respawn_timer = undefined
 	}
+} else {
+	//heat += 0.05
+	
+	//if heat == heatmax {
+	//	burn = true
+	//}
+	
+	//var heat_ratio = heat / heatmax;
+	//var red_value = clamp(255 * heat_ratio, 0, 255);
+
+	//image_blend = make_color_rgb(red_value, 0, 0);
 }
+
+
+
 if !stepped_on && image_alpha < 1 {
     image_alpha += alpha_fade_speed;  
 
     if image_alpha >= 1 {
         image_alpha = 1;  
     }
+	
+	heat = 0
 }
+
